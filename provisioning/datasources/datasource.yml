@@ -4,7 +4,7 @@ datasources:
   - name: InfluxDB
     type: influxdb
     access: server
-    url: 192.168.104.5:8086
+    url: 192.168.1.5:8086
     user: homeassistant
     database: homeassistant
     jsonData:
