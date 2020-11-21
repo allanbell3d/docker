@@ -10,7 +10,7 @@ services:
       - "8083:8083"
       - "2003:2003"
     env_file:
-      - ./services/influxdb/influxdb.env
+      - ./provisioning/influxdb.env
     volumes:
       - ./volumes/influxdb/data:/var/lib/influxdb
       - ./backups/influxdb/db:/var/lib/influxdb/backup
@@ -23,7 +23,7 @@ services:
     ports:
       - "3000:3000"
     env_file:
-      - ./services/grafana/grafana.env
+      - ./provisioning/grafana.env
     volumes:
       - ./volumes/grafana/data:/var/lib/grafana
       - ./volumes/grafana/data:/var/log/grafana
